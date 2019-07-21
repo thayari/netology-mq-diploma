@@ -1,0 +1,695 @@
+@font-face {
+  src: url(fonts/OpenSans-Regular.woff);
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  src: url(fonts/OpenSans-Bold.woff);
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Open Sans, Verdana, sans serif;
+  overflow-x: hidden;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+
+
+.header {
+  position: relative;
+ 
+  background-image: url("../images/football_767.jpg");
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  background-color: #171435;
+  background-size: cover;
+
+  color: white;
+  text-transform: uppercase;
+}
+
+.header::after {
+  content: "";
+  background-color: #090c35;
+  opacity: 0.95;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__content {
+  position: relative;
+  z-index: 100;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.surface-logo {
+  fill: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__slogan p {
+  line-height: 1.2em;
+}
+
+.store-button {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 14px;
+
+  background-color: #5e42b0;
+  border: 0;
+  border-radius: 17px;
+
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+  font: inherit;
+}
+
+.appstore-icon, .google-icon {
+  width: 20px;
+  fill: white;
+  margin-right: 6px;
+  margin-left: 84px;
+}
+
+.content {
+  color: black;
+}
+
+.section-with-figure {
+  position: relative;
+}
+
+.figure {
+  position: absolute;
+  z-index: 100;
+}
+
+.article {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main__heading {
+  text-transform: uppercase;
+  color: #e7e7e7;
+  font-weight: bold;
+
+}
+
+
+
+.main__subheading {
+  text-transform: uppercase;
+  color: #c1c1c1;
+  font-weight: bold;
+}
+
+.subheading-number {
+  color: black;
+  font-size: 0.65em;
+  vertical-align: 6px;
+  position: relative;
+}
+
+  .subheading-number::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 4px;
+    background-color: #5e42b0;
+    border-radius: 2px;
+
+    margin-top: -10px;
+  }
+
+.article__connection {
+  background-color: white;
+}
+
+.article__collaboration {
+  background-color: #f5f4f9;
+}
+
+.article__growth {
+  background-color: #5e42b0;
+  color: white;
+}
+
+  .article__growth .subheading-number::after {
+    background-color: white;
+  }
+
+.players .article__growth {
+    background-color: #090c35;
+}
+
+.players .article__growth .subheading-number {
+    color: #9173e6;
+}
+
+.rectangular-photo {
+  max-width: 100%;
+}
+
+.rectangle-container {
+  position: relative;
+}
+
+.rectangle {
+  background-color: #5e42b0;
+  position: absolute;
+  text-align: center;
+}
+
+.rectangle-number {
+  color: white;
+  font-weight: bold;
+  vertical-align: 6px;
+
+  
+}
+
+  .rectangle-number::after {
+    content: "";
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8f7bc8;
+    border-radius: 2px;
+  }
+
+.section-with-rectangle__article {
+  box-sizing: border-box;
+}
+
+
+
+
+
+.footer {
+  position: relative;
+ 
+  background-image: url("../images/game_767.jpg");
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  background-color: #171435;
+  background-size: cover;
+
+  color: white;
+  text-transform: uppercase;
+}
+
+.footer::after {
+  content: "";
+  background-color: #090c35;
+  opacity: 0.9;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer__logo-block {
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+
+  background: linear-gradient(to bottom, #7656d6, #51379c);
+}
+
+.logo-icon {
+  fill: white;
+  width: 80.56%;
+  margin-top: 15%;
+}
+
+.footer__text {
+  text-align: center;
+}
+
+.download-app {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.show-everyone {
+  color: #9b8ec1;
+}
+
+
+
+/* Styles for mobile use ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media (max-width: 640px) {
+  .header {
+    padding-top: 33px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 70px;
+  }
+
+  .surface-logo {
+    width: 133px;
+  }
+
+  .header__content {
+    width: 280px;
+  }
+
+  .header__slogan {
+    margin-top: 136px;
+    font-size: 175%; /*28px*/
+  }
+
+  .header__slogan p:last-child {
+    margin-top: 20px;
+    margin-bottom: 89px;
+    margin-left: 45px;
+  }
+
+
+  .store-button {
+    width: 280px;
+    height: 35px;
+
+    font-size: 50%; /*8px*/
+  }
+
+  .appstore-icon {
+    width: 20px;
+  }
+
+  .figure {
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .main__heading {
+    font-size: 50px;
+    margin-left: 20px;
+  }
+
+
+
+  .main__subheading {
+    font-size: 23px;
+  }
+
+  .article__connection {
+    background-color: #fafafa;
+    margin-top: 240px;
+  }
+
+  .article-text {
+    font-size: 15px;
+  }
+
+  .rectangle {
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    top: -58px;
+  }
+
+  .rectangle-number {
+    font-size: 14px;
+    line-height: 68px;
+  }
+
+    .rectangle-number::after {
+      width: 16px;
+      height: 4px;
+      margin-top: -26px;
+    }
+
+  .section-with-rectangle__article {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 64px;
+  }
+
+  .section-with-rectangle__text {
+    font-size: 100%;
+  }
+
+  .section-with-rectangle .main__heading {
+    font-size: 28px;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .footer {
+    padding-top: 99px;
+  }
+
+  .footer__logo-block {
+    width: 72px;
+    height: 74px;
+    border-radius: 12px;
+  }
+
+  .download-app {
+    font-size: 200%;
+  }
+  
+  .show-everyone {
+    font-size: 14px;
+  }
+
+  .footer__logo {
+    width: 133px;
+  }
+
+}
+
+/* Styles for tablet use ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media (min-width: 641px) {
+
+  .header {
+    padding-top: 33px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 70px;
+    background-image: url("../images/football_1280.jpg");
+  }
+
+  .header__content {
+    max-width: 704px;
+  }
+
+  .surface-logo {
+    width: 207px;
+  }
+
+  .header__slogan {
+    font-size: 400%; /*64px*/
+  }  
+
+  .header__slogan p:first-child {
+    margin-left: 53px;
+  }
+
+  .header__slogan p:last-child {
+    margin-left: 166px;
+    margin-bottom: 311px;
+  }
+
+  .download-buttons {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 653px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+
+  .store-button {
+    width: 314px;
+    height: 77px;
+    border-radius: 38.5px;
+
+    font-size: 87.5%; /*14px*/
+  }
+
+  .appstore-icon, .google-icon {
+    width: 40px;
+    margin-right: 28px;
+    margin-left: 56px;
+  }
+
+  .article {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .main__heading {
+    font-size: 80px;
+    margin-left: 32px;
+    margin-top: 42px;
+  }
+
+  .athlets .main__heading {
+    margin-left: 38%;
+  }
+
+
+  .main__subheading {
+    margin-left: 38%;
+    margin-bottom: 5px;
+    font-size: 32px;
+  }
+
+  .article-text {
+    margin-left: 38%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+
+  .players .main__subheading, .players .article-text  {
+    margin-left: 0;
+    margin-right: 42%;    
+  }
+
+  .figure {
+    top: 35px;
+    right: 55%;
+  }
+
+  .players .figure {
+    right: 0;
+    left: auto;
+    top: -18px;
+  }
+
+  .section-with-rectangle__article {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 108px;
+  }
+
+  .rectangle {
+    width: 116px;
+    height: 116px;
+    margin-left: 32px;
+    top: -86px;
+  }
+
+  .rectangle-number {
+    font-size: 24px;
+    line-height: 110px;
+  }
+
+    .rectangle-number::after {
+      width: 26px;
+      height: 5px;
+      margin-top: -38px;
+    }
+
+
+  .section-with-rectangle__text {
+    font-size: 24px;
+  }
+
+  .footer__logo-block {
+    width: 130px;
+    height: 137px;
+    border-radius: 29px;
+  }
+
+
+  .download-app {
+    font-size: 80px;
+  }
+  
+  .show-everyone {
+    font-size: 36px;
+  }
+
+}
+
+
+  
+
+/*Styles for desktop use ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (min-width: 961px) {
+
+  .header {
+    background-image: url("../images/football_1920.jpg");
+    padding-top: 45px;
+    padding-bottom: 110px;
+  }
+
+  .header .download-buttons {
+    margin: 0 auto;
+  }
+
+  .surface-logo {
+    width: 192px;
+  }
+  .header__content {
+    max-width: 1530px;
+  }
+
+  .header__slogan {
+    font-size: 562.5%; /*90px*/
+    margin-top: 280px;
+    margin-bottom: 215px;
+  } 
+  
+  .header__slogan p:first-child {
+    margin-left: 0;
+  }
+
+  .header__slogan p:last-child {
+    margin-left: 0;
+    margin-bottom: 221px;
+    text-align: right;
+  }
+
+  .article {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .main__heading {
+    margin-top: 83px;
+    margin-left: 0;
+  }
+
+  .main__subheading {
+    margin-bottom: 5px;
+  }
+
+  .article-text {
+    max-width: 716px;
+    font-size: 20px;
+  }
+
+  .athlets .main__heading, .athlets .article-text, .athlets .main__subheading {
+    margin-left: 52%;
+  }
+
+  .figure {
+    top: -54px;
+  }
+
+  .players .figure {
+    right: auto;
+    left: 52%;
+  }
+  
+  .players .article, .players .main__heading {
+    padding-left: 10%;
+  }
+
+
+  .section-with-rectangle {
+    display: flex;
+    line-height: 0;
+  }
+
+  .rectangle-container {
+    top: 160px;
+    left: -84px;
+  }
+
+  .rectangle {
+    width: 168px;
+    height: 155px;
+    margin: 0;
+  }
+
+  
+
+  .section-with-rectangle__article {
+    width: 50%;
+    line-height: initial;
+  }
+
+  .section-with-rectangle picture {
+    width: 50%;
+  }
+
+  .reverse picture {
+    order: 2;
+  }
+
+  .reverse .rectangle-container {
+    order: 1;
+  }
+
+
+  .footer {
+    padding-top: 229px;
+    padding-bottom: 52px;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    width: 870px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 151px;
+  }
+
+  .footer__logo-block {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .footer__text {
+    text-align: left;
+  }
+
+  .download-app {
+    font-size: 80px;
+  }
+
+  .show-everyone {
+    font-size: 30px;
+  }
+
+  .download-buttons {
+    margin-bottom: 262px;
+    max-width: 672px;
+  }
+
+}
+
+
