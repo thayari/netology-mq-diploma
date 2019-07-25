@@ -20,6 +20,7 @@
 body {
   font-family: Open Sans, Verdana, sans serif;
   overflow-x: hidden;
+  min-width: 320px;
 }
 
 .text-bold {
@@ -55,7 +56,7 @@ body {
 
 .header__content {
   position: relative;
-  z-index: 100;
+  z-index: 1;
   margin-left: auto;
   margin-right: auto;
 }
@@ -67,15 +68,18 @@ body {
   margin-right: auto;
 }
 
-.header__slogan p {
+.header__slogan {
   line-height: 1.2em;
+}
+
+.header__slogan span {
+  display: block;
 }
 
 .store-button {
   display: flex;
   align-items: center;
-
-  margin-bottom: 14px;
+  justify-content: center;
 
   background-color: #5e42b0;
   border: 0;
@@ -85,14 +89,25 @@ body {
   text-transform: uppercase;
   text-align: left;
   font: inherit;
+
+  transition: 0.3s;
+}
+
+  .store-button span {
+    display: block;
+  }
+
+.store-button:hover {
+  background-color: #3f2c78;
 }
 
 .appstore-icon, .google-icon {
   width: 20px;
   fill: white;
   margin-right: 6px;
-  margin-left: 84px;
-}
+  }
+
+
 
 .content {
   color: black;
@@ -104,7 +119,7 @@ body {
 
 .figure {
   position: absolute;
-  z-index: 100;
+  z-index: 2;
 }
 
 .article {
@@ -118,7 +133,6 @@ body {
   text-transform: uppercase;
   color: #e7e7e7;
   font-weight: bold;
-
 }
 
 
@@ -131,8 +145,6 @@ body {
 
 .subheading-number {
   color: black;
-  font-size: 0.65em;
-  vertical-align: 6px;
   position: relative;
 }
 
@@ -291,7 +303,7 @@ body {
     font-size: 175%; /*28px*/
   }
 
-  .header__slogan p:last-child {
+  .header__slogan span {
     margin-top: 20px;
     margin-bottom: 89px;
     margin-left: 45px;
@@ -301,6 +313,8 @@ body {
   .store-button {
     width: 280px;
     height: 35px;
+
+    margin-bottom: 14px;
 
     font-size: 50%; /*8px*/
   }
@@ -323,6 +337,11 @@ body {
 
   .main__subheading {
     font-size: 23px;
+  }
+
+  .subheading-number {
+    font-size: 14px;
+    vertical-align: 6px;
   }
 
   .article__connection {
@@ -414,44 +433,50 @@ body {
 
   .header__slogan {
     font-size: 400%; /*64px*/
+    margin-left: 53px;
+    margin-top: 150px;
+    margin-bottom: 300px;
   }  
 
-  .header__slogan p:first-child {
-    margin-left: 53px;
-  }
-
-  .header__slogan p:last-child {
+  .header__slogan span {
     margin-left: 166px;
-    margin-bottom: 311px;
   }
 
   .download-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
-    max-width: 653px;
-    margin-left: auto;
-    margin-right: auto;
-  
+  }
+
+  .appstore {
+    margin-right: 16px;
+  }
+
+  .googleplay {
+    margin-left: 16px;
   }
 
   .store-button {
     width: 314px;
     height: 77px;
     border-radius: 38.5px;
+    margin-bottom: 0;
 
     font-size: 87.5%; /*14px*/
   }
 
   .appstore-icon, .google-icon {
     width: 40px;
-    margin-right: 28px;
-    margin-left: 56px;
+    margin-right: 20px;
+  }
+
+  .section-with-figure {
+    padding-top: 56px;
   }
 
   .article {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 34px;
+    padding-bottom: 34px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -459,7 +484,6 @@ body {
   .main__heading {
     font-size: 80px;
     margin-left: 32px;
-    margin-top: 42px;
   }
 
   .athlets .main__heading {
@@ -472,6 +496,17 @@ body {
     margin-bottom: 5px;
     font-size: 32px;
   }
+
+  .subheading-number {
+    font-size: 18px;
+    vertical-align: 10px;
+  }
+
+    .subheading-number::after {
+      width: 20px;
+      height: 5px;
+      margin-top: -14px;
+    }
 
   .article-text {
     margin-left: 38%;
@@ -493,13 +528,19 @@ body {
   .players .figure {
     right: 0;
     left: auto;
-    top: -18px;
+    top: 33px;
   }
 
   .section-with-rectangle__article {
     padding-left: 32px;
     padding-right: 32px;
+    padding-top: 44px;
     padding-bottom: 108px;
+  }
+
+  .section-with-rectangle__article .main__heading {
+    margin-left: 0;
+    margin-bottom: 10px;
   }
 
   .rectangle {
@@ -525,11 +566,22 @@ body {
     font-size: 24px;
   }
 
+  .footer {
+    padding-top: 126px;
+    padding-bottom: 23px;
+  }
+
   .footer__logo-block {
     width: 130px;
     height: 137px;
     border-radius: 29px;
   }
+
+  .footer__text {
+    margin-top: 68px;
+    margin-bottom: 280px;
+  }
+
 
 
   .download-app {
@@ -556,7 +608,8 @@ body {
   }
 
   .header .download-buttons {
-    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .surface-logo {
@@ -569,16 +622,11 @@ body {
   .header__slogan {
     font-size: 562.5%; /*90px*/
     margin-top: 280px;
-    margin-bottom: 215px;
+    margin-bottom: 221px;
+    margin-left: 0;
   } 
   
-  .header__slogan p:first-child {
-    margin-left: 0;
-  }
-
-  .header__slogan p:last-child {
-    margin-left: 0;
-    margin-bottom: 221px;
+  .header__slogan span {
     text-align: right;
   }
 
@@ -622,24 +670,41 @@ body {
   .section-with-rectangle {
     display: flex;
     line-height: 0;
-  }
-
-  .rectangle-container {
-    top: 160px;
-    left: -84px;
-  }
+    align-items: center;
+    }
 
   .rectangle {
     width: 168px;
-    height: 155px;
+    height: 156px;
     margin: 0;
+
+    left: -84px;
+    top: -147px;
   }
 
+
+  .rectangle-number {
+    line-height: 138px;
+  }
+
+  .rectangle-number::after {
+    margin-top: -48px
+  }
   
 
   .section-with-rectangle__article {
     width: 50%;
     line-height: initial;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 120px;
+    padding-right: 10%;
+  }
+
+  .section-with-rectangle__article .main__heading {
+    margin-top: 0;
+    margin-bottom: 77px;
+    line-height: 1;
   }
 
   .section-with-rectangle picture {
@@ -654,6 +719,10 @@ body {
     order: 1;
   }
 
+  .reverse .section-with-rectangle__article {
+    padding-left: 10%;
+    padding-right: 120px;
+  }
 
   .footer {
     padding-top: 229px;
@@ -662,32 +731,40 @@ body {
 
   .footer__wrapper {
     display: flex;
-    width: 870px;
+    width: 960px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 151px;
+    align-items: center;
+    justify-content: center;
   }
 
   .footer__logo-block {
     margin-left: 0;
-    margin-right: 10px;
+    margin-right: 28px;
   }
 
   .footer__text {
     text-align: left;
+    line-height: 1;
+    margin: 0;
   }
 
   .download-app {
     font-size: 80px;
+    margin-bottom: 7px;
   }
 
   .show-everyone {
     font-size: 30px;
+    padding-left: 4px;
   }
 
   .download-buttons {
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 262px;
-    max-width: 672px;
+
   }
 
 }
