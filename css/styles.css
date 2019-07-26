@@ -203,7 +203,7 @@ body {
   color: white;
   font-weight: bold;
   vertical-align: 6px;
-
+  letter-spacing: 1px;
   
 }
 
@@ -671,6 +671,7 @@ body {
     display: flex;
     line-height: 0;
     align-items: center;
+    
     }
 
   .rectangle {
@@ -679,7 +680,7 @@ body {
     margin: 0;
 
     left: -84px;
-    top: -147px;
+    top: calc(50% - 78px);
   }
 
 
@@ -699,12 +700,14 @@ body {
     padding-bottom: 0;
     padding-left: 120px;
     padding-right: 10%;
+
   }
 
   .section-with-rectangle__article .main__heading {
     margin-top: 0;
-    margin-bottom: 77px;
+    margin-bottom: 4vw;
     line-height: 1;
+    font-size: 4.17vw;
   }
 
   .section-with-rectangle picture {
@@ -768,5 +771,4 @@ body {
   }
 
 }
-
 
