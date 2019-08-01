@@ -45,7 +45,7 @@ body {
 .header::after {
   content: "";
   background-color: #090c35;
-  opacity: 0.95;
+  opacity: 0.9;
 
   position: absolute;
   top: 0;
@@ -69,7 +69,7 @@ body {
 }
 
 .header__slogan {
-  line-height: 1.2em;
+  letter-spacing: 0.04em;
 }
 
 .header__slogan span {
@@ -107,6 +107,10 @@ body {
   margin-right: 6px;
   }
 
+.appstore-icon {
+  margin-bottom: 3%;
+}
+
 
 
 .content {
@@ -141,6 +145,7 @@ body {
   text-transform: uppercase;
   color: #c1c1c1;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .subheading-number {
@@ -152,8 +157,6 @@ body {
     content: "";
     position: absolute;
     display: block;
-    width: 17px;
-    height: 4px;
     background-color: #5e42b0;
     border-radius: 2px;
 
@@ -215,13 +218,18 @@ body {
     margin-right: auto;
     background-color: #8f7bc8;
     border-radius: 2px;
+    width: 17px;
+    height: 4px;
   }
 
 .section-with-rectangle__article {
   box-sizing: border-box;
 }
 
-
+.section-with-rectangle__text {
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+}
 
 
 
@@ -299,13 +307,14 @@ body {
   }
 
   .header__slogan {
-    margin-top: 136px;
+    margin-top: 130px;
+    margin-bottom: 84px;
+    line-height: 1.2em;
     font-size: 175%; /*28px*/
   }
 
   .header__slogan span {
-    margin-top: 20px;
-    margin-bottom: 89px;
+    margin-top: 18px;
     margin-left: 45px;
   }
 
@@ -320,23 +329,25 @@ body {
   }
 
   .appstore-icon {
-    width: 20px;
+    width: 24px;
   }
 
   .figure {
     left: 50%;
     transform: translate(-50%);
+    top: 80px;
   }
 
   .main__heading {
-    font-size: 50px;
+    font-size: 312.5%; /*50px*/
     margin-left: 20px;
   }
 
 
 
   .main__subheading {
-    font-size: 23px;
+    font-size: 143.75%; /*23px*/
+    margin-bottom: 15px;
   }
 
   .subheading-number {
@@ -344,24 +355,29 @@ body {
     vertical-align: 6px;
   }
 
+    .subheading-number::after {
+      width: 16px;
+      height: 4px;
+    }
+
   .article__connection {
     background-color: #fafafa;
-    margin-top: 240px;
+    margin-top: 264px;
   }
 
   .article-text {
-    font-size: 15px;
+    font-size: 93.75%; /*15px*/
   }
 
   .rectangle {
     width: 70px;
     height: 70px;
     margin-left: 20px;
-    top: -58px;
+    top: -62px;
   }
 
   .rectangle-number {
-    font-size: 14px;
+    font-size: 87.5%; /*14px*/
     line-height: 68px;
   }
 
@@ -374,7 +390,8 @@ body {
   .section-with-rectangle__article {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 64px;
+    padding-top: 20px;
+    padding-bottom: 79px;
   }
 
   .section-with-rectangle__text {
@@ -382,13 +399,14 @@ body {
   }
 
   .section-with-rectangle .main__heading {
-    font-size: 28px;
+    font-size: 175%; /*28px*/
     margin-left: 0;
-    margin-top: 30px;
+    margin-bottom: 0.5em;
   }
 
   .footer {
     padding-top: 99px;
+    padding-bottom: 10px;
   }
 
   .footer__logo-block {
@@ -397,12 +415,22 @@ body {
     border-radius: 12px;
   }
 
+  .footer__text {
+    margin-top: 48px;
+    margin-bottom: 73px;
+  }
+
   .download-app {
     font-size: 200%;
+    letter-spacing: 0.03em;
   }
   
   .show-everyone {
-    font-size: 14px;
+    font-size: 87.5%; /*14px*/
+  }
+
+  .footer .surface-logo {
+    margin-top: 82px;
   }
 
   .footer__logo {
@@ -416,10 +444,10 @@ body {
 @media (min-width: 641px) {
 
   .header {
-    padding-top: 33px;
+    padding-top: 39px;
     padding-right: 32px;
     padding-left: 32px;
-    padding-bottom: 70px;
+    padding-bottom: 92px;
     background-image: url("../images/football_1280.jpg");
   }
 
@@ -434,12 +462,12 @@ body {
   .header__slogan {
     font-size: 400%; /*64px*/
     margin-left: 53px;
-    margin-top: 150px;
+    margin-top: 166px;
     margin-bottom: 300px;
   }  
 
   .header__slogan span {
-    margin-left: 166px;
+    margin-left: 108px;
   }
 
   .download-buttons {
@@ -475,15 +503,16 @@ body {
   }
 
   .article {
-    padding-top: 34px;
-    padding-bottom: 34px;
+    padding-top: 31px;
+    padding-bottom: 33px;
     padding-left: 32px;
     padding-right: 32px;
   }
 
   .main__heading {
-    font-size: 80px;
-    margin-left: 32px;
+    font-size: 500%; /*80px*/
+    margin-left: 0.4em;
+
   }
 
   .athlets .main__heading {
@@ -493,8 +522,8 @@ body {
 
   .main__subheading {
     margin-left: 38%;
-    margin-bottom: 5px;
-    font-size: 32px;
+    margin-bottom: 0.5em;
+    font-size: 200%; /*32px*/
   }
 
   .subheading-number {
@@ -503,15 +532,16 @@ body {
   }
 
     .subheading-number::after {
-      width: 20px;
+      width: 22px;
       height: 5px;
       margin-top: -14px;
     }
 
   .article-text {
     margin-left: 38%;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 100%; /*16px*/
+    line-height: 1.75em;
+    letter-spacing: 0.05em;
   }
 
 
@@ -520,22 +550,26 @@ body {
     margin-right: 42%;    
   }
 
+  .players .article__growth .article-text {
+    font-size: 112.5%; /*18px*/
+  }
+
   .figure {
-    top: 35px;
-    right: 55%;
+    top: 95px;
+    right: 55.3%;
   }
 
   .players .figure {
     right: 0;
     left: auto;
-    top: 33px;
+    top: 38px;
   }
 
   .section-with-rectangle__article {
     padding-left: 32px;
     padding-right: 32px;
-    padding-top: 44px;
-    padding-bottom: 108px;
+    padding-top: 59px;
+    padding-bottom: 100px;
   }
 
   .section-with-rectangle__article .main__heading {
@@ -551,7 +585,7 @@ body {
   }
 
   .rectangle-number {
-    font-size: 24px;
+    font-size: 150%; /*24px*/
     line-height: 110px;
   }
 
@@ -563,12 +597,14 @@ body {
 
 
   .section-with-rectangle__text {
-    font-size: 24px;
+    font-size: 150%;
   }
 
   .footer {
     padding-top: 126px;
     padding-bottom: 23px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 
   .footer__logo-block {
@@ -578,18 +614,24 @@ body {
   }
 
   .footer__text {
-    margin-top: 68px;
-    margin-bottom: 280px;
+    margin-top: 62px;
+    margin-bottom: 278px;
   }
 
 
 
   .download-app {
-    font-size: 80px;
+    font-size: 500%;
+    letter-spacing: 0.04em;
+    line-height: 1.2em;
   }
   
   .show-everyone {
-    font-size: 36px;
+    font-size: 225%; /*36px*/
+  }
+
+  .footer .surface-logo {
+    margin-top: 54px;
   }
 
 }
@@ -622,44 +664,78 @@ body {
   .header__slogan {
     font-size: 562.5%; /*90px*/
     margin-top: 280px;
-    margin-bottom: 221px;
+    margin-bottom: 213px;
     margin-left: 0;
+    letter-spacing: 0.045em;
+    line-height: 1.03em;
   } 
   
   .header__slogan span {
     text-align: right;
   }
 
+  .appstore-icon {
+    width: 48px;
+  }
+
+  .appstore {
+    margin-right: 25px;
+  }
+
+  .googleplay {
+    margin-left: 25px;
+  }
+
+  .section-with-figure {
+    padding-top: 86px;
+  }
+
   .article {
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 52px;
+    padding-bottom: 52px;
   }
 
   .main__heading {
-    margin-top: 83px;
     margin-left: 0;
+    margin-bottom: 23px;
   }
 
   .main__subheading {
-    margin-bottom: 5px;
+    font-size: 225%; /*36px*/
+    margin-bottom: 0.42em;
+  }
+  
+  .subheading-number {
+    vertical-align: 14px;
+  }
+
+  .subheading-number::after {
+    margin-top: -18px;
   }
 
   .article-text {
     max-width: 716px;
-    font-size: 20px;
+    font-size: 125%;
+    line-height: 1.2em;
   }
+
+    .players .article__growth .article-text {
+      font-size: 125%;
+    }
 
   .athlets .main__heading, .athlets .article-text, .athlets .main__subheading {
-    margin-left: 52%;
+    margin-left: 53%;
   }
 
-  .figure {
-    top: -54px;
+  .athlets .figure {
+    top: 26px;
+    right: 49.7%;
   }
 
   .players .figure {
+    top: 25px;
     right: auto;
-    left: 52%;
+    left: 42.3%;
   }
   
   .players .article, .players .main__heading {
@@ -698,7 +774,7 @@ body {
     line-height: initial;
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 120px;
+    padding-left: 123px;
     padding-right: 10%;
 
   }
@@ -723,7 +799,7 @@ body {
   }
 
   .reverse .section-with-rectangle__article {
-    padding-left: 10%;
+    padding-left: 9.6%;
     padding-right: 120px;
   }
 
@@ -749,17 +825,18 @@ body {
 
   .footer__text {
     text-align: left;
-    line-height: 1;
+
     margin: 0;
   }
 
   .download-app {
-    font-size: 80px;
-    margin-bottom: 7px;
+    font-size: 500%;
+    margin-bottom: 4px;
+    line-height: 1;
   }
 
   .show-everyone {
-    font-size: 30px;
+    font-size: 187.5%; /*30px*/
     padding-left: 4px;
   }
 
@@ -770,5 +847,18 @@ body {
 
   }
 
+
 }
 
+@media (min-width: 2000px) {
+  .content {
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-with-rectangle__article .main__heading {
+    margin-bottom: 2vw;
+    font-size: 3vw;
+  }
+}
