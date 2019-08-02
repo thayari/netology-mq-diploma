@@ -72,7 +72,7 @@ body {
   letter-spacing: 0.04em;
 }
 
-.header__slogan span {
+.play-college-sports {
   display: block;
 }
 
@@ -93,7 +93,7 @@ body {
   transition: 0.3s;
 }
 
-  .store-button span {
+  .store-button .text-bold {
     display: block;
   }
 
@@ -107,14 +107,16 @@ body {
   margin-right: 6px;
   }
 
-.appstore-icon {
-  margin-bottom: 3%;
-}
-
-
 
 .content {
   color: black;
+}
+
+.article {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .section-with-figure {
@@ -126,20 +128,11 @@ body {
   z-index: 2;
 }
 
-.article {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .main__heading {
   text-transform: uppercase;
   color: #e7e7e7;
   font-weight: bold;
 }
-
-
 
 .main__subheading {
   text-transform: uppercase;
@@ -313,7 +306,7 @@ body {
     font-size: 175%; /*28px*/
   }
 
-  .header__slogan span {
+  .play-college-sports {
     margin-top: 18px;
     margin-left: 45px;
   }
@@ -336,14 +329,12 @@ body {
     left: 50%;
     transform: translate(-50%);
     top: 80px;
-  }
+}
 
   .main__heading {
     font-size: 312.5%; /*50px*/
     margin-left: 20px;
   }
-
-
 
   .main__subheading {
     font-size: 143.75%; /*23px*/
@@ -466,7 +457,7 @@ body {
     margin-bottom: 300px;
   }  
 
-  .header__slogan span {
+  .header__slogan .play-college-sports {
     margin-left: 108px;
   }
 
@@ -476,13 +467,11 @@ body {
 
   }
 
-  .appstore {
-    margin-right: 16px;
+  .store-button + .store-button {
+    margin-left: 32px;
   }
 
-  .googleplay {
-    margin-left: 16px;
-  }
+
 
   .store-button {
     width: 314px;
@@ -496,6 +485,10 @@ body {
   .appstore-icon, .google-icon {
     width: 40px;
     margin-right: 20px;
+  }
+
+  .appstore-icon {
+    margin-bottom: 3%;
   }
 
   .section-with-figure {
@@ -554,9 +547,15 @@ body {
     font-size: 112.5%; /*18px*/
   }
 
+  .section-with-figure {
+    position: relative;
+  }
+  
   .figure {
     top: 95px;
     right: 55.3%;
+    position: absolute;
+    z-index: 2;
   }
 
   .players .figure {
@@ -670,7 +669,7 @@ body {
     line-height: 1.03em;
   } 
   
-  .header__slogan span {
+  .header__slogan .play-college-sports {
     text-align: right;
   }
 
@@ -678,12 +677,8 @@ body {
     width: 48px;
   }
 
-  .appstore {
-    margin-right: 25px;
-  }
-
-  .googleplay {
-    margin-left: 25px;
+  .store-button + .store-button {
+    margin-left: 50px;
   }
 
   .section-with-figure {
